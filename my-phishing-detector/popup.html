@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Detector</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="icons/icon48.png" alt="Phishing Detector Icon" class="icon-header">
+    <h1>Phishing Detector</h1>
+    <p id="status-message" class="status-checking">กำลังตรวจสอบหน้าเว็บ...</p>
+    <div id="loading-spinner" class="loading-spinner"></div>
+    <div id="result-details" class="result-details hidden">
+      <p><strong>URL ที่กำลังดู:</strong> <span id="current-url"></span></p>
+      <p><strong>สถานะ:</strong> <span id="detection-status"></span></p>
+    </div>
+    <button id="rescan-button" class="rescan-button hidden">สแกนซ้ำ</button>
+  </div>
+</body>
+</html>
