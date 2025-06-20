@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Logger",
+  "version": "1.0",
+  "description": "บันทึก URL ของหน้าเว็บที่เข้าชมลงใน Console ของ Service Worker",
+  "permissions": [
+    "webNavigation" /* เพื่อดักจับเหตุการณ์การนำทางของเว็บ */
+  ],
+  "background": {
+    "service_worker": "background.js" /* กำหนด Service Worker (Background Script) */
+  }
+}
