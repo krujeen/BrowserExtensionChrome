@@ -1,0 +1,121 @@
+/* popup.css */
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  width: 320px; /* ความกว้างของ Pop-up */
+  background-color: #f0f4f8; /* สีพื้นหลัง */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-header {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.0em;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.status-checking {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.status-safe {
+  color: #28a745; /* สีเขียว */
+  font-weight: 700;
+}
+
+.status-phishing {
+  color: #dc3545; /* สีแดง */
+  font-weight: 700;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db; /* สีน้ำเงิน */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+.result-details {
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  width: 100%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.result-details p {
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  word-wrap: break-word; /* เพื่อให้ URL ไม่เกินขอบ */
+}
+
+.result-details strong {
+  color: #2c3e50;
+}
+
+.rescan-button {
+  background-color: #4CAF50; /* สีเขียว */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rescan-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.rescan-button:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
