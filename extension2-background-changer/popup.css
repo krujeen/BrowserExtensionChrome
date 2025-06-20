@@ -1,0 +1,45 @@
+/* popup.css */
+/* Tailwind CSS CDN */
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  width: 280px;
+  background-color: #f0f4f8;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.4em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 ปุ่มต่อแถว */
+  gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+  width: 100%;
+}
+
+.color-button {
+  padding: 12px 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
